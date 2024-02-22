@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^4.29.7",
+    "@datadog/browser-rum": "^5.9.0",
     "@sentry/nextjs": "^7.102.0",
     "@syncfusion/ej2-layouts": "^24.1.41",
     "@syncfusion/ej2-popups": "^24.2.5",
@@ -24,7 +25,9 @@
     "@syncfusion/ej2-react-richtexteditor": "^24.1.46",
     "@types/pg": "^8.11.0",
     "bootstrap": "^5.3.2",
+    "dd-trace": "^5.3.0",
     "eslint-config-airbnb-base": "^15.0.0",
+    "express-opentracing": "^0.1.1",
     "next": "14.1.0",
     "pg": "^8.11.3",
     "react": "^18",
