@@ -15,7 +15,7 @@ module.exports = {
       path: "/home/ec2-user/src/", // mention the path in ec2 instance where your code need to be eg /home/ec2-user
       "pre-deploy-local": "",
       "post-deploy":
-        "source ~/.nvm/nvm.sh && npm install && npm run build && pm2 reload ecosystem.config.js --env production",
+        "source ~/.nvm/nvm.sh && cd src/maelstrom-platform-ui && npm install && npm run build && pm2 reload ecosystem.config.js --env production",
       "pre-setup": "",
       ssh_options: "ForwardAgent=yes",
     },
@@ -28,7 +28,7 @@ module.exports = {
       path: "/home/ec2-user/src/", // mention the path in ec2 instance where your code need to be eg /home/ec2-user
       "pre-deploy-local": "",
       "post-deploy":
-        "source ~/.nvm/nvm.sh && npm install && npm run build && pm2 reload ecosystem.config.js --env staging",
+        "source ~/.nvm/nvm.sh && cd src/maelstrom-platform-ui && npm install && npm run build && pm2 reload ecosystem.config.js --env staging",
       "pre-setup": "",
       ssh_options: "ForwardAgent=yes",
     },
@@ -41,7 +41,7 @@ module.exports = {
       path: "/home/ec2-user/src/", // mention the path in ec2 instance where your code need to be eg /home/ec2-user
       "pre-deploy-local": "",
       "post-deploy":
-        "source ~/.nvm/nvm.sh && npm install && npm run build && pm2 reload ecosystem.config.js --env qa",
+        "source ~/.nvm/nvm.sh && cd src/maelstrom-platform-ui && npm install && npm run build && pm2 reload ecosystem.config.js --env qa",
       "pre-setup": "",
       ssh_options: "ForwardAgent=yes",
     },
@@ -54,7 +54,7 @@ module.exports = {
       path: "/home/ec2-user/src/", // mention the path in ec2 instance where your code need to be eg /home/ec2-user
       "pre-deploy-local": "",
       "post-deploy":
-        "source ~/.nvm/nvm.sh && npm install && npm run build && pm2 reload ecosystem.config.js --env dev",
+        "source ~/.nvm/nvm.sh && cd src/maelstrom-platform-ui && npm install && npm run build && pm2 reload ecosystem.config.js --env dev",
       "pre-setup": "",
       ssh_options: "ForwardAgent=yes",
     },       
