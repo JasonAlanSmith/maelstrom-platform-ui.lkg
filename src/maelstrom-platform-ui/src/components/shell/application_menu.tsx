@@ -1,8 +1,11 @@
 'use client';
 
-import React, { FC, ReactElement } from 'react';
+import React, {
+  FC,
+  ReactElement,
+} from 'react';
 
-import { MPButton } from './mpbutton';
+import { MPButton } from '../ui/mpbutton';
 
 interface choice {
   caption: string;
