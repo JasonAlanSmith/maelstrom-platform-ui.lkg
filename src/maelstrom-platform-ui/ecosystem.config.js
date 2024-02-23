@@ -12,7 +12,7 @@ module.exports = {
       host: "3.133.107.107", // public ip address of the ec2 instance
       ref: "prod", // specify the branch where your code resides
       repo: "git@github.com:JasonAlanSmith/maelstrom-platform-ui.git", //ssh git url of your repo 
-      path: "/home/ec2-user/src/", // mention the path in ec2 instance where your code need to be eg /home/ec2-user
+      path: "/home/ec2-user/", // mention the path in ec2 instance where your code need to be eg /home/ec2-user
       "pre-deploy-local": "",
       "post-deploy":
         "source ~/.nvm/nvm.sh && cd src/maelstrom-platform-ui && npm install && npm run build && pm2 reload ecosystem.config.js --env production",
@@ -25,7 +25,7 @@ module.exports = {
       host: "3.129.70.48", // public ip address of the ec2 instance
       ref: "staging", // specify the branch where your code resides
       repo: "git@github.com:JasonAlanSmith/maelstrom-platform-ui.git", //ssh git url of your repo 
-      path: "/home/ec2-user/src/", // mention the path in ec2 instance where your code need to be eg /home/ec2-user
+      path: "/home/ec2-user/", // mention the path in ec2 instance where your code need to be eg /home/ec2-user
       "pre-deploy-local": "",
       "post-deploy":
         "source ~/.nvm/nvm.sh && cd src/maelstrom-platform-ui && npm install && npm run build && pm2 reload ecosystem.config.js --env staging",
@@ -38,7 +38,7 @@ module.exports = {
       host: "13.59.245.63", // public ip address of the ec2 instance
       ref: "qa", // specify the branch where your code resides
       repo: "git@github.com:JasonAlanSmith/maelstrom-platform-ui.git", //ssh git url of your repo 
-      path: "/home/ec2-user/src/", // mention the path in ec2 instance where your code need to be eg /home/ec2-user
+      path: "/home/ec2-user/", // mention the path in ec2 instance where your code need to be eg /home/ec2-user
       "pre-deploy-local": "",
       "post-deploy":
         "source ~/.nvm/nvm.sh && cd src/maelstrom-platform-ui && npm install && npm run build && pm2 reload ecosystem.config.js --env qa",
@@ -51,7 +51,7 @@ module.exports = {
       host: "52.15.65.215", // public ip address of the ec2 instance
       ref: "dev", // specify the branch where your code resides
       repo: "git@github.com:JasonAlanSmith/maelstrom-platform-ui.git", //ssh git url of your repo 
-      path: "/home/ec2-user/src/", // mention the path in ec2 instance where your code need to be eg /home/ec2-user
+      path: "/home/ec2-user/", // mention the path in ec2 instance where your code need to be eg /home/ec2-user
       "pre-deploy-local": "",
       "post-deploy":
         "source ~/.nvm/nvm.sh && cd src/maelstrom-platform-ui && npm install && npm run build && pm2 reload ecosystem.config.js --env dev",
