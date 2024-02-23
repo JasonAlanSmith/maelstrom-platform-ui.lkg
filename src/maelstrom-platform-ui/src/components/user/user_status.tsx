@@ -1,12 +1,16 @@
 'use client';
 
-import React, { FC, useContext } from 'react';
+import React, {
+  FC,
+  useContext,
+} from 'react';
 
 import { useUser } from '@clerk/nextjs';
-import { MaelstromContext } from '@/app/utils/context';
+
+import { MaelstromContext } from '../../utils/context';
 
 const UserInfo: FC = () => {
-  const { value, orgNm } = useContext(MaelstromContext);
+  const { organizationName } = useContext(MaelstromContext);
 
   const { isSignedIn, user, isLoaded } = useUser();
 
@@ -22,7 +26,7 @@ const UserInfo: FC = () => {
         {user.username}
         {' '}
         from
-        {orgNm}
+        {organizationName}
         {' '}
         is signed in.
       </p>

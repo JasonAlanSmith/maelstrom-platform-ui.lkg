@@ -1,17 +1,20 @@
 'use client';
 
-import React, { FC, ReactElement, useContext } from 'react';
+import React, {
+  FC,
+  ReactElement,
+  useContext,
+} from 'react';
 
 import Link from 'next/link';
 
-import UserInfo from '@/app/components/user_status';
-import { MaelstromContext } from '@/app/utils/context';
-
-import UserPreferences from './user_preferences';
-import UserAccount from './user_profile';
+import { MaelstromContext } from '../../utils/context';
+import UserPreferences from '../user/user_preferences';
+import UserAccount from '../user/user_profile';
+import UserInfo from '../user/user_status';
 
 export const ApplicationHeader: FC = (): ReactElement => {
-  const { value, orgNm } = useContext(MaelstromContext);
+  const { organizationName } = useContext(MaelstromContext);
 
   return (
     <div className="container-fluid">

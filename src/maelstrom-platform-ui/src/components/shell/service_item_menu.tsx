@@ -1,6 +1,9 @@
-import React, { FC, ReactElement } from 'react';
+import React, {
+  FC,
+  ReactElement,
+} from 'react';
 
-import { MPButton } from '../components/mpbutton';
+import { MPButton } from '../ui/mpbutton';
 
 interface choice {
   caption: string;

@@ -1,6 +1,9 @@
 'use client';
 
-import React, { FC, ReactElement } from 'react';
+import React, {
+  FC,
+  ReactElement,
+} from 'react';
 
 import { useRouter } from 'next/navigation';
 
@@ -15,7 +18,8 @@ import {
   Resize,
   Sort,
 } from '@syncfusion/ej2-react-grids';
-import { baseUrl } from '@/app/utils/common';
+
+import { baseUrl } from '../../utils/common';
 
 interface columnDirective {
   field: string;

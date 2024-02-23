@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 
-import { baseUrl } from '@/app/utils/common';
+import { baseUrl } from '../../utils/common';
 
 interface ActivityLog {
   sid: string;

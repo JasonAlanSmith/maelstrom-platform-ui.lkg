@@ -1,8 +1,12 @@
-import React, { FC, ReactElement, ReactNode } from 'react';
+import React, {
+  FC,
+  ReactElement,
+  ReactNode,
+} from 'react';
 
-import { ServiceMenu } from '../components/service_menu';
 import { ApplicationHeader } from './application_header';
 import { ApplicationMenu } from './application_menu';
+import { ServiceMenu } from './service_menu';
 
 interface choice {
   caption: string;
